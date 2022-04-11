@@ -1,0 +1,42 @@
+.experienceBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > span {
+        font-size: 1rem;
+    }
+
+    & > div {
+        width: 80%;
+        height: 4px;
+
+        background-color: var(--gray-line);
+
+        border-radius: 4px;
+        margin: 0 1.5rem;
+        position: relative;
+
+        &:hover {
+            span {
+                visibility: visible;
+            }
+        }
+
+        & > div {
+            background-color: var(--green);
+
+            height: 4px;
+
+            border-radius: 4px;
+        }
+
+        & > span {
+            visibility: hidden;
+
+            position: absolute;
+            top: 15px;
+            transform: translateX(-50%);
+        }
+    }
+}

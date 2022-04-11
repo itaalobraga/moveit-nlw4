@@ -1,0 +1,21 @@
+.contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.4rem;
+
+    margin-top: 8.4rem ;
+
+    width: 100%;
+
+    > div:first-child {
+        max-width: 389px;
+        width: 100%;
+
+    }
+
+    > div:last-child {
+        max-width: 468px;
+        width: 100%;
+    }
+}
